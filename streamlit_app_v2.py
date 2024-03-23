@@ -5,6 +5,18 @@ import os
 # App title
 st.set_page_config(page_title=" Smart Trader")
 
+# App background
+st.markdown(
+    """
+    <style>
+    body {
+        background-image: url('background_image.jpg');
+        background-size: cover;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 # Replicate Credentials
 with st.sidebar:
     st.title('Smart Trader')

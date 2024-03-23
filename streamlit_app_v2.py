@@ -11,9 +11,29 @@ st.markdown(
     <style>
     body, .stApp {
         background-color: #333333 !important; /* Dark grey background color */
-        background-image: url('logo.png');
-        background-size: cover;
     }
+
+    .stText {
+        color: white !important; /* Change text color to white */
+    }
+
+    .stChatMessage {
+        background-color: #333333 !important; /* Dark grey background for chat messages */
+        color: white !important; /* White text color for chat messages */
+    }
+
+    .stChatMessage.user {
+        background-color: #555555 !important; /* Darker grey background for user's chat messages */
+    }
+
+    .stChatMessage.assistant {
+        background-color: #444444 !important; /* Darker grey background for assistant's chat messages */
+    }
+
+    .stChatMessageWrapper {
+        padding: 5px !important; /* Add some padding to chat messages */
+    }
+
     </style>
     """,
     unsafe_allow_html=True

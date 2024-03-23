@@ -6,38 +6,32 @@ import os
 st.set_page_config(page_title=" Smart Trader chatbot")
 
 # App background
-st.markdown(
+st.beta_set_css(
     """
-    <style>
     body, .stApp {
-        background-color: #333333 !important; /* Dark grey background color */
-    }
-
-    .stText {
-        color: white !important; /* Change text color to white */
+        background-color: #333333; /* Dark grey background color */
+        color: white; /* Change text color to white */
     }
 
     .stChatMessage {
-        background-color: #333333 !important; /* Dark grey background for chat messages */
-        color: white !important; /* White text color for chat messages */
+        background-color: #333333; /* Dark grey background for chat messages */
+        color: white; /* White text color for chat messages */
     }
 
     .stChatMessage.user {
-        background-color: #555555 !important; /* Darker grey background for user's chat messages */
+        background-color: #555555; /* Darker grey background for user's chat messages */
     }
 
     .stChatMessage.assistant {
-        background-color: #444444 !important; /* Darker grey background for assistant's chat messages */
+        background-color: #444444; /* Darker grey background for assistant's chat messages */
     }
 
     .stChatMessageWrapper {
-        padding: 5px !important; /* Add some padding to chat messages */
+        padding: 5px; /* Add some padding to chat messages */
     }
-
-    </style>
-    """,
-    unsafe_allow_html=True
+    """
 )
+
 # Replicate Credentials
 with st.sidebar:
     st.title('Smart Trader Chatbot')

@@ -24,7 +24,7 @@ st.markdown(
     }
 
     .stChatMessage.assistant {
-        background-color: #444444 !important; /* Darker grey background for assistant's chat messages */
+        background-color: #000000 !important; /* Darker grey background for assistant's chat messages */
     }
 
     .stChatMessageWrapper {

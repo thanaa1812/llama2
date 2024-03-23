@@ -10,7 +10,7 @@ st.markdown(
     """
     <style>
     body {
-        background-image: url('background_image.jpg');
+        background-image: url('logo.png');
         background-size: cover;
     }
     </style>

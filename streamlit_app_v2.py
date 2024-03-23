@@ -3,11 +3,11 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title=" Smart Trader Chatbot")
+st.set_page_config(page_title=" Smart Trader")
 
 # Replicate Credentials
 with st.sidebar:
-    st.title('Smart Trader Chatbot')
+    st.title('Smart Trader')
     if 'REPLICATE_API_TOKEN' in st.secrets:
         st.success('API key already provided!', icon='✅')
         replicate_api = st.secrets['REPLICATE_API_TOKEN']

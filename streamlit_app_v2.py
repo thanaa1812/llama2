@@ -10,6 +10,7 @@ st.markdown(
     """
     <style>
     body {
+        background-color: #333333; /* Dark grey background color */
         background-image: url('logo.png');
         background-size: cover;
     }

@@ -6,34 +6,6 @@ import os
 st.set_page_config(page_title=" Smart Trader chatbot")
 
 # App background
-st.markdown(
-    """
-    <style>
-    body, .stApp {
-        background-color: #333333 !important; /* Dark grey background color */
-        color: white !important; /* Change text color to white */
-    }
-
-    .stChatMessage {
-        background-color: #333333 !important; /* Dark grey background for chat messages */
-        color: white !important; /* White text color for chat messages */
-    }
-
-    .stChatMessage.user {
-        background-color: #555555 !important; /* Darker grey background for user's chat messages */
-    }
-
-    .stChatMessage.assistant {
-        background-color: #000000 !important; /* Darker grey background for assistant's chat messages */
-    }
-
-    .stChatMessageWrapper {
-        padding: 5px !important; /* Add some padding to chat messages */
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 
 
 
@@ -101,7 +73,7 @@ if prompt := st.chat_input(disabled=not replicate_api):
 
 # Generate a new response if last message is not from assistant
 if st.session_state.messages[-1]["role"] != "assistant":
-    with st.chat_message("assistant"):
+    with st.chat_message( icon='⚠️',"assistant"):
         with st.spinner("Thinking..."):
             response = generate_llama2_response(prompt)
             placeholder = st.empty()

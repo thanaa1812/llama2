@@ -6,8 +6,9 @@ import os
 st.set_page_config(page_title=" Smart Trader chatbot")
 
 # App background
-st.beta_set_css(
+st.markdown(
     """
+    <style>
     body, .stApp {
         background-color: #333333; /* Dark grey background color */
         color: white; /* Change text color to white */
@@ -29,8 +30,11 @@ st.beta_set_css(
     .stChatMessageWrapper {
         padding: 5px; /* Add some padding to chat messages */
     }
-    """
+    </style>
+    """,
+    unsafe_allow_html=True
 )
+
 
 # Replicate Credentials
 with st.sidebar:

@@ -3,7 +3,7 @@ import replicate
 import os
 
 # App title
-st.set_page_config(page_title=" Smart Trader")
+st.set_page_config(page_title=" Smart Trader chatbot")
 
 # App background
 st.markdown(
